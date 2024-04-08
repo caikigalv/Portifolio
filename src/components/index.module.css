@@ -1,0 +1,23 @@
+
+.container{
+    width: 100vw;
+    height: 666px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://a-static.besthdwallpaper.com/astronaut-and-jellyfish-wallpaper-3554x1999-43741_53.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container2{
+    width: 100vw;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://preview.redd.it/5c4z5e79mny21.jpg?auto=webp&s=23b99303798432c477cf4bf533cb94e617e57544');
+    background-position: center;
+    background-size: cover;
+}
