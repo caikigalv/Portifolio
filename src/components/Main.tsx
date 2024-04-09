@@ -244,7 +244,7 @@ const data = [
     },
     {
         id: 5,
-        nome: 'Darkmod',
+        nome: 'Dark',
         img: 'Darkmod.jpeg',
         review: 'Site feito para praticar o javascript',
         link: 'https://caikigalv.github.io/Darkmod/'
