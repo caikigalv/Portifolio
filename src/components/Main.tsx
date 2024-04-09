@@ -224,7 +224,7 @@ const data = [
         id: 2,
         nome: 'Starbucks',
         img: 'starbucks.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat.',
+        review: 'Site feito durante o curso de HTML&CSS da B7web',
         link: 'https://caikigalv.github.io/starbucks/'
 
     },
@@ -232,49 +232,49 @@ const data = [
         id: 3,
         nome: 'Jogo da Velha',
         img: 'Jogo da Velha.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat. ',
+        review: 'Site feito durante o curso de JavaScript da B7web ',
         link: 'https://caikigalv.github.io/Jogo-da-Velha/'
     },
     {
         id: 4,
         nome: 'Relogio Analógico',
         img: 'Relogio.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat. ',
+        review: 'Site feito durante o curso de JavaScript da B7web  ',
         link: 'https://caikigalv.github.io/Relogio/'
     },
     {
         id: 5,
-        nome: 'CreepyHistory',
-        img: 'creepy.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat. ',
-        link: 'https://caikigalv.github.io/creepyhistory/'
+        nome: 'Quadro de Desenho',
+        img: 'quadro.jpeg',
+        review: 'Site feito durante o curso de JavaScript da B7web',
+        link: 'https://caikigalv.github.io/Quadro-de-Desenho/'
     },
     {
         id: 6,
         nome: 'Tela Login',
         img: 'Tela login.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat. ',
+        review: 'Tela de login feito para praticar tailwincss e javascript ',
         link: 'https://caikigalv.github.io/telalogin/'
     },
     {
         id: 7,
         nome: 'Medicenter',
         img: './Medicenter.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat.',
+        review: 'Site feito durante o curso de HTML&CSS da B7web',
         link: 'https://caikigalv.github.io/medicenter/'
     },
     {
         id: 8,
         nome: 'Bloco de Notas',
         img: 'Bloco De Notas.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat.',
+        review: 'Bloco de nota feito no evento da rockeseat no evento de react',
         link: 'https://caikigalv.github.io/Bloco-de-Notas/'
     },
     {
         id: 9,
         nome: 'Jogo Quiz',
         img: 'Jogo Quiz.jpeg',
-        review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat. ',
+        review: 'Site feito durante o curso de JavaScript da B7web ',
         link: 'https://caikigalv.github.io/Jogo-Quiz/'
     },
 ]
