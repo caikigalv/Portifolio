@@ -141,8 +141,6 @@ export const Second = () => {
 
 
 
-
-
 export const Second2 = () => {
     const settings = {
         dots: true,
