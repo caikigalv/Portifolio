@@ -245,7 +245,7 @@ const data = [
     {
         id: 5,
         nome: 'Quadro de Desenho',
-        img: 'quadro.jpeg',
+        img: 'quadro2.jpeg',
         review: 'Site feito durante o curso de JavaScript da B7web',
         link: 'https://caikigalv.github.io/Quadro-de-Desenho/'
     },
