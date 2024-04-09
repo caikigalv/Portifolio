@@ -186,7 +186,7 @@ export const Second2 = () => {
     };
 
     return (
-        <div className={style.container2}>
+        <div id='projetos' className={style.container2}>
             <h1 className='text-purple-600 mt-10 uppercase font-bold text-[30px] '>Projetos</h1>
             <div className='w-3/4 m-auto '>
                 <div className='mt-20'>

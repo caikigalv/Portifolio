@@ -24,7 +24,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="flex justify-center items-center gap-2 mt-4">
+                        <div id="contato" className="flex justify-center items-center gap-2 mt-4">
                             <IoPhonePortraitOutline className="text-purple-600" />
                             <p className="text-white ">+55 (11) 98207-9986</p>
                         </div>
