@@ -9,7 +9,7 @@ const Page = () =>{
     <div className="overflow-x-hidden ">
         <Headers/>
         <Main
-          title = 'Olá, Sejam Bem vindos!'
+          title = 'Olá, Seja Bem-vindo(a)!'
           text = 'Meu nome é Caiki, tenho 23 anos e sou um entusiasta estudante de programação Dedico-me continuamente à busca do conhecimento ,sempre empenhado em aprender e evoluir. Meu objetivo é conquistar minha primeira oportunidade na área de front-end, onde pretendo aplicar e aprimorar minhas habilidades de desenvolvimento web'
           photo ='./perfil.jpg'
         />
