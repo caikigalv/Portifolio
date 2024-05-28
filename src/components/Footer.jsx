@@ -17,7 +17,7 @@ export const Footer = () => {
 
                     <div className="flex flex-col">
                         <p className="text-white uppercase font-bold text-1xl text-center">Social Media </p>
-                        <div className="flex justify-center items-center  gap-8 mt-4 w-[400px]">
+                        <div className="flex justify-center items-center  text-center  gap-8 mt-4 w-[400px]">
                             <a href="https://github.com/caikigalv"><FaGithub className="text-purple-600 text-3xl" title="GitHub" /></a>
                             <a href="https://www.linkedin.com/in/caiki-carlos-43372b284/"><FaLinkedin className="text-purple-600 text-3xl" title="LinkedIn" /></a>
                             <a href="https://www.instagram.com/caikicarlosoficial/"><FaInstagram className="text-purple-600 text-3xl" title="Instagram" /></a>

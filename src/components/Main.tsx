@@ -102,7 +102,7 @@ export const Second = () => {
     return (
         <div className="bg-slate-950 w-screen lg:h-[400px] flex flex-col items-center">
             <div className='w-screen lg:block hidden'>
-                <div className=' gap-2 border-4 border-purple-800  border-l-transparent border-r-transparent' >
+                <div className=' gap-8 border-4 border-purple-800  border-l-transparent border-r-transparent' >
                     <Slider {...settings}>
                         {carrossel.map((index) => (
                             <div key={index.id} >
