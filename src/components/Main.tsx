@@ -3,6 +3,7 @@ import style from '@/components/index.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion"
 
 
 
@@ -58,6 +59,22 @@ const carrossel = [
 
 
 export const Second = () => {
+    const fade = {
+        initial:{
+            opacity: 0,
+            y:100,
+            
+        },
+        animate:(index:number)=>({
+            opacity:1,
+            y:0,
+            scale:1,
+            trasition:{
+                delay: 0.05 * index,
+            }
+    
+        })
+    }
 
     const settings = {
         dots: true,
@@ -103,7 +120,17 @@ export const Second = () => {
             <div>
 
                 <div className='grid md:grid-flow-col md:gap-8 justify-center items-center'>
-                    {Habilidades.map((item) => (
+                    {Habilidades.map((item, index) => (
+                        <motion.div
+                        key={index}
+                        variants={fade}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{
+                            once:true,
+                        }}
+                        custom={index}
+                        >
                         <div className='mt-10 md:mb-[100px] mb-4'>
                             <img className='lg:w-[120px] w-[100px]' src={item.html} alt="" title='HTML' />
                             <img className='lg:w-[120px] w-[100px]' src={item.css} alt="" title='CSS' />
@@ -113,6 +140,7 @@ export const Second = () => {
                             <img className='lg:w-[120px] w-[100px]' src={item.react} alt="" title='REACT' />
                             <img className='lg:w-[120px] w-[100px]' src={item.git} alt="" title='GIT' />
                         </div>
+                        </motion.div>
                     ))}
 
 
@@ -146,8 +174,8 @@ export const Second2 = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1200,
