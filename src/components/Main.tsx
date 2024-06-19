@@ -21,7 +21,7 @@ export const Main = ({ title, text, photo }: Props) => {
         <div className={style.container}>
             <div className="lg:flex lg:justify-around items-center w-screen">
                 <div className="lg:w-[600px] text-center">
-                    <h1 className="md:text-[40px] text-[20px] mb-4 text-center font-bold text-white animate-pulse">{title}</h1>
+                    <h1 className=" flex justify-center text-purple-600 md:text-[40px] text-[20px] mb-4 text-center font-bold"><p className='text-white'>Olá, </p>{title}</h1>
                     <p className="font-semibold text-white lg:shadow-xl text-center text-[16px]">{text}</p>
                 </div>
                 <div className='flex justify-center '>
@@ -85,7 +85,34 @@ export const Second = () => {
         speed: 2000,
         autoplaySpeed: 0,
         cssEase: "linear",
-        pauseOnHover: false
+        pauseOnHover: false,
+        responsive:[
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+            
     };
 
     const Habilidades = [
@@ -102,12 +129,12 @@ export const Second = () => {
     return (
         <div className="bg-slate-950 w-screen lg:h-[400px] flex flex-col items-center">
             <div className='w-screen lg:block hidden'>
-                <div className=' gap-8 border-4 border-purple-800  border-l-transparent border-r-transparent' >
+                <div className=' border-4 border-purple-800  border-l-transparent border-r-transparent' >
                     <Slider {...settings}>
                         {carrossel.map((index) => (
                             <div key={index.id} >
                                 <div>
-                                    <p className='text-purple-600'>{index.nome}</p>
+                                    <p className='text-purple-600 '>{index.nome}</p>
                                 </div>
                             </div>
                         ))}
@@ -132,13 +159,13 @@ export const Second = () => {
                         custom={index}
                         >
                         <div className='mt-10 md:mb-[100px] mb-4'>
-                            <img className='lg:w-[120px] w-[100px]' src={item.html} alt="" title='HTML' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.css} alt="" title='CSS' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.javascript} alt="" title='JAVASCRIPT' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.typescript} alt="" title='TYPESCRIPT' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.tailwindcss} alt="" title='TAILWINDCSS' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.react} alt="" title='REACT' />
-                            <img className='lg:w-[120px] w-[100px]' src={item.git} alt="" title='GIT' />
+                            <img className='lg:w-[120px] w-[100px] xl:hover:scale-150 transition' src={item.html} alt="" title='HTML' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.css} alt="" title='CSS' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.javascript} alt="" title='JAVASCRIPT' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.typescript} alt="" title='TYPESCRIPT' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.tailwindcss} alt="" title='TAILWINDCSS' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.react} alt="" title='REACT' />
+                            <img className='lg:w-[120px] w-[100px]  xl:hover:scale-150 transition' src={item.git} alt="" title='GIT' />
                         </div>
                         </motion.div>
                     ))}
@@ -226,7 +253,7 @@ export const Second2 = () => {
                                 </div>
                                 <div className='flex flex-col justify-center items-center gap-4 p-4'>
                                     <p className='text-xl font-bold '>{d.nome}</p>
-                                    <p>{d.review}</p>
+                                    <p className='text-[10px]'>{d.review}</p>
                                     <button className='bg-purple-900 text-white text-lg px-6 py-1 rounded-xl'><a href={d.link}>Ir ao Site</a></button>
                                 </div>
                             </div>
@@ -265,10 +292,10 @@ const data = [
     },
     {
         id: 4,
-        nome: 'Relogio Analógico',
-        img: 'Relogio.jpeg',
-        review: 'Site feito durante o curso de JavaScript da B7web  ',
-        link: 'https://caikigalv.github.io/Relogio/'
+        nome: 'LosFLix',
+        img: 'Losflix.jpeg',
+        review: 'Este site de filmes foi desenvolvido para estudos de React, utilizando hooks e APIs. Nele, você encontrará uma ampla variedade de gêneros de filmes e séries. O site possui funcionalidades como pesquisa de filmes, exibição de detalhes de cada título e a opção de adicionar filmes e séries aos favoritos.',
+        link: 'https://los-flix.vercel.app/'
     },
     {
         id: 5,
